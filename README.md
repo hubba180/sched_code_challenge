@@ -7,11 +7,11 @@ The goal is to simulate accessing data from a database, serializing the informat
 
 ### Data
 
-The input data is provided in 3 CSV files: `session.csv`, `role.csv` and `user.csv`. The session data, including session unique IDs is encoded in the `session.csv` file. The user profiles, including user unique IDs is in the `user.csv` file. Finally, the `role.csv` file encodes session-to-user mappings.
+The input data is provided in 3 SQL dump files: `session.sql`, `role.sql` and `user.sql`. The session data, including session unique IDs is contained in the `session.sql` file. The user profiles, including user unique IDs is in the `user.sql` file. Finally, the `role.sql` file contains session-to-user mappings. MySQL is the preferred RDBMS for this project.
 
 ### Gotchas
 
-Sessions can be active (published), or inactive (unpublished). Filter the non-active sessions out from the final data set. Note also, that speakers are not the only role a user can have.
+Sessions can be active (published), or inactive (unpublished). Filter the non-active sessions out from the final data set. Note also, that speakers are not the only role a user can have. Finally, speakers may not all have last names.
 
 ### Example output data
 
@@ -29,6 +29,6 @@ Session Baz - Feb 28th 2018 12:30pm-1:30pm
 
 ### Requirements
 
-All tools that you would use in your day to day job are fair game. Google is your friend. Take three simulated Database dumps (Sessions, Speakers, Join table) which are stored in the repo as CSV files. Combine the data and sort these session by the speaker name. Either first or last name is fine. Speakers may not all have last names.
+All tools that you would use in your day to day job are fair game. Google is your friend. Take three simulated Database dumps (Sessions, Speakers, Join table) which are stored in the repo as SQL files. Combine the data and sort these sessions by the speaker's last name. Your output does not need to follow the example given above, verbatim.
 
-If needed, make your best assumption and explain how/why.
+If needed, make your best assumptions and explain how/why.
