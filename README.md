@@ -5,6 +5,10 @@
 You will be creating an event page (schedule) that has a list of sessions (schedule items). Each of the sessions has speakers who will be presenting. Your job is to combine the speaker and session data, sort the sessions alphabetically based on the speaker's last name, and output the list in any way that you desire (console, HTML, etc). Include at least the session name, the speaker(s) name, and session start/end time.
 The goal is to simulate accessing data from a database, serializing the information, manipulating the data, and outputting the data in any format.
 
+### Language
+
+While we'd love to give you the option to use *any* language, we don't have enough (human) bandwidth to review solutions written in Lisp or Malbolge. You can pick any language as long as its PHP, Javascript, Python, Ruby or Golang. PHP gets priority, as most of our codebase is writting in PHP. We also prefer objective oriented over procedural and functional programming.
+
 ### Data
 
 The input data is provided in 3 SQL dump files: `session.sql`, `role.sql` and `user.sql`. The session data, including session unique IDs is contained in the `session.sql` file. The user profiles, including user unique IDs is in the `user.sql` file. Finally, the `role.sql` file contains session-to-user mappings. MySQL is the preferred RDBMS for this project. The data is pretty simple, but take a look to familiarize yourself with it.
