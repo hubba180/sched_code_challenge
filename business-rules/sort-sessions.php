@@ -1,5 +1,4 @@
 <?php 
-
   function switchFirstAndLast($name) {
     $nameArray = explode(" ", strval($name));
     if (count($nameArray) < 2) {
