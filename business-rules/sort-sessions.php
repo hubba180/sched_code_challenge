@@ -1,13 +1,5 @@
 <?php 
 
-  function getSpeakers($query) {
-    return getQuery($query);
-  }
-  
-  function getUniqueSessions($query) {
-    return getQuery($query);
-  }
-
   function switchFirstAndLast($name) {
     $nameArray = explode(" ", strval($name));
     if (count($nameArray) < 2) {
@@ -47,8 +39,8 @@
   function filterSessions() {
     include "./data-access/data-layer.php";
     include "./constants/mysql-vals.php";
-    $speakerSessions = getSpeakers($speakersQuery);
-    $uniqueSessions = getUniqueSessions($sessionsQuery);
+    $speakerSessions = getQuery($speakersQuery);
+    $uniqueSessions = getQuery($sessionsQuery);
     $filteredSessions = [];
     foreach($uniqueSessions as $session) {
       // iterate over speaker sessions and grab speaker data
