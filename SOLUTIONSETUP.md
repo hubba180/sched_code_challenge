@@ -28,11 +28,11 @@ $ git clone git@github.com:hubba180/sched_code_challenge.git
 
 ### Database Setup
 1. Within MySQL Workbench, connect to your local instance and create a new database schema for this project. 
-2. execute the SQL files found in `codechallenge/data` within the new schema to populate the database with the test data. Verify in Workbench that there are now three tables filled with dummy data:
+2. Execute the SQL files found in `codechallenge/data` within the new schema to populate with the test data. Verify in Workbench that there are now three tables filled with dummy data:
     - role
     - session
     - user
-3. navigate to `codechallenge/constants` and open the `mysql-vals.php` file in a preferred code editor. 
+3. Navigate to `codechallenge/constants` and open the `mysql-vals.php` file in a preferred code editor. 
 4. Within the file, update the string values of the following variables. These are used to connect to your local database:
     - `$username` on line 2 (for most people this value will be `root`).
     - `$password` on line 3 (this is the password associated with your sql root user).
@@ -45,7 +45,7 @@ Navigate to the root directory of the project and run the following command from
 ```
 $ php -S localhost:4001 
 ```
-Verify that something similar to the following should is visible in the terminal: 
+Verify that something similar to the following is visible in the terminal: 
 ```
 [Thu Aug  3 10:36:25 2023] PHP 8.2.9 Development Server (http://localhost:4001) started
 ```
