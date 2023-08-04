@@ -31,12 +31,12 @@
   function sortSpeakers($people) {
     $reversedNames = [];
     foreach($people as $person) {
-      //reverse first and last name then push to new array
+      // reverse first and last name then push to new array
       array_push($reversedNames, switchFirstAndLast($person));
     }
-    //sort based on last name
+    // sort based on last name
     sort($reversedNames);
-    //switch first and last names back to original places
+    // switch first and last names back to original places
     for ($x = 0; $x <= count($reversedNames) - 1; $x++) {
       $name = $reversedNames[$x];
       $reversedNames[$x] = reverseNameSwitch($name);
@@ -60,7 +60,7 @@
           array_push($speakers, $speaker["name"]);
         }
       }
-      //alphabetize speakers on last name
+      // alphabetize speakers on last name
       $sortedSpeakers = sortSpeakers($speakers);
       $compiledData = [
         "speakers" => $sortedSpeakers, 
