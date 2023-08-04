@@ -21,8 +21,10 @@ Based off the directions from the ReadMe, the goal of this solution is that data
 
 1. Open a new terminal.
 2. Navigate to whichever directory is preferred to store this project.
-3. Run the following command: 
-```$ git clone git@github.com:hubba180/sched_code_challenge.git``` to clone this project locally.
+3. Run the following command to clone this project locally: 
+```
+$ git clone git@github.com:hubba180/sched_code_challenge.git
+``` 
 
 ### Database Setup
 1. Within MySQL Workbench, connect to your local instance and create a new database schema for this project. 
